@@ -31,6 +31,7 @@ h1, h2, h3 {
 
     h1 {
         font-size: 24px;
+	color: #28282B
     }
 }
 
@@ -42,6 +43,8 @@ h1, h2, h3 {
 
     h1 {
         font-size: 32px;
+	margin-top: 0; /* Adjust this value to reduce space */
+        padding-top: 0
     }
 }
 
@@ -92,9 +95,14 @@ h1, h2, h3 {
 
         /* Style the content to match the provided image */
         .page .content {
-            color: white;
+            color: #28282B
             z-index: 3;
-            text-align: left;
+            text-align: justify;
+	    margin-left: 2%;
+	    margin-right: 2%;
+	    margin-top: 0; /* Adjust this value to reduce space */
+            padding-top: 0
+
         }
 
 	.centered-text {
@@ -208,11 +216,59 @@ h1, h2, h3 {
 
             .page .content h1 {
                 font-size: 2rem;
+		color: #28282B
             }
 
             .page .content p {
                 font-size: 1rem;
+		color: #28282B
             }
+        }
+       
+            #page3 .content img {
+                max-width: 100%; /* Set maximum width to ensure responsiveness */
+                max-height: 300px; /* Limit the maximum height to 300 pixels */
+                display: block;
+                margin: 0 auto; /* Center the image horizontally */
+                border-radius: 15px; /* Add border radius for rounded corners */
+                margin-bottom: 20px; /* Add some bottom margin for spacing */
+            }
+
+        #page3 {
+              margin-top: 410px; /* This value was 1000px, which was creating a large space */
+              align-items: center;
+              background-color: #FFF5EE; /* Consistent background for other pages */
+       }
+
+	.profile-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  .profile {
+    text-align: center;
+  }
+  .profile img {
+    width: 150px; /* or any other size */
+    height: 200px;
+  }
+ .flex-container {
+            display: flex;
+            justify-content: center; /* This will center the items on the line */
+            align-items: center; /* This will center the items vertically */
+            margin-top: 20px; /* Add some space above the flex container */
+        }
+
+        /* Flex item style */
+        .flex-item {
+            margin: 0 10px; /* Add some space around each item */
+        }
+        
+        /* Link styling, if needed */
+        .flex-item a {
+            text-decoration: none;
+            color: #000; /* Example color - change as needed */
+            /* Add other styles for your links here */
         }
     </style>
 </head>
@@ -248,12 +304,55 @@ h1, h2, h3 {
             </div>
         </div>
     </div>
-
     <!-- Page 3 Placeholder Content -->
     <div id="page3" class="page">
         <div class="content">
-            <h1>Page 3</h1>
-            <p>This is placeholder content for the fourth page.</p>
+            <h1>About Us</h1>
+            <p>Our project offers a comprehensive guide to Florida's diverse attractions. We present an in-depth look at the vibrant cities of the Sunshine State, each with unique characteristics and amenities. Users can explore the varied urban experiences, from the historic charm of St. Augustine to the lively streets of Miami. For beach lovers, our portal details Florida's finest shores, revealing options from bustling family destinations to tranquil retreats. We also delve into the thrills of Florida theme parks, providing attendance trends and the excitement these parks offer.</p>
+            <p>Moreover, our system includes extensive coverage of other attractions such as serene nature parks, cultural landmarks, and water parks. With the integration of user feedback and dynamic expense data, our platform is an indispensable resource for planning visits to Florida, catering to tourists and residents alike seeking to experience the state's rich tapestry of leisure opportunities. </p>
+
+<div class="profile-container">
+  <div class="profile">
+    <img src="susmitha.jpg" alt="Susmitha Malireddy">
+    <h2>Susmitha Malireddy</h2>
+    <p>Presently enrolled in the graduate program for Business Analytics and Information Systems at USF. Worked on the Index page and Cities page.</p>
+  </div>
+  <div class="profile">
+    <img src="priyam.png" alt="Name of the person">
+    <h2>Priyam Gupta</h2>
+    <p>Currently a student in the graduate program for Business Analytics and Information Systems at USF. Worked on the UI and Interaction of the Adventure Section.</p>
+</div>
+</div>
+
+<div class="profile-container">
+  <div class="profile">
+    <img src="kusuma.jpeg" alt="kmy">
+    <h2>Kusuma Yalamarthi</h2>
+    <p>Currently pursuing studies in the Business Analytics and Information Systems graduate program at USF. Worked on the other attractions page..</p>
+ </div>
+  <div class="profile">
+    <img src="nithin.jpeg" alt="Name of the person">
+    <h2>Sai Nithin Bharadwaj Govind</h2>
+    <p>At the moment, undertaking studies in USF's graduate program for Business Analytics and Information Systems. Worked on the Beaches page and gathered relevent data.</p>
+
+</div>
+</div>
+
+
+   <div class="flex-container">
+        <div class="flex-item">
+            <h2>Github link</h2>
+            <!-- Github content here -->
+        </div>
+        <div class="flex-item">
+            <h2><a href="https://github.com/susmithamalireddy/Project-DIS.git">"Click Here"</a></h2>
+            <!-- Web LookAndFeel content or link here -->
+        </div>
+    </div>
+
+
+            <h2> Data Model</h2>
+            <img src="erd.png" alt="erd" width="auto" height="auto"/>
         </div>
     </div>
 
